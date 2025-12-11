@@ -38,7 +38,7 @@ Follow these steps to run the project on your local machine:
 
 Clone the Repository:
 
-git clone [https://github.com/username/ultimate-ml-lab.git](https://github.com/username/ultimate-ml-lab.git)
+git clone [https://github.com/05Arda/RegressionLab.git](https://github.com/05Arda/RegressionLab.git)
 cd ultimate-ml-lab
 
 Create a Virtual Environment (Recommended):
