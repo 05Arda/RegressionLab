@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ultimate ML Lab - User Manual</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f4f4f9;
+      }
+      header {
+        background: #007bff;
+        color: white;
+        padding: 20px;
+        border-radius: 8px 8px 0 0;
+      }
+      h1 {
+        margin: 0;
+      }
+      .container {
+        background: white;
+        padding: 30px;
+        border-radius: 0 0 8px 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 10px;
+        color: #0056b3;
+        margin-top: 30px;
+      }
+      h3 {
+        color: #333;
+        margin-top: 20px;
+        font-weight: 600;
+      }
+      .control-group {
+        background: #e9ecef;
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 25px;
+        border-left: 5px solid #28a745;
+      }
+      .control-group h3 {
+        margin-top: 0;
+        color: #28a745;
+      }
+      .term {
+        font-weight: bold;
+        color: #0056b3;
+      }
+      .concept-box {
+        background: #e3f2fd;
+        padding: 15px;
+        border-radius: 5px;
+        margin-top: 10px;
+        font-size: 0.95em;
+        border-left: 4px solid #0288d1;
+      }
+      .tip {
+        background: #fff3cd;
+        color: #856404;
+        padding: 15px;
+        border-radius: 5px;
+        border-left: 5px solid #ffc107;
+        margin: 20px 0;
+      }
+      ul {
+        list-style-type: disc;
+        padding-left: 20px;
+      }
+      li {
+        margin-bottom: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>🧪 Ultimate ML Lab: Documentation</h1>
+      <p>A comprehensive guide to the Interactive Regression Simulator.</p>
+    </header>
+
+    <div class="container">
+      <p>
+        Welcome to the Ultimate ML Lab. This tool is organized into three
+        distinct sections to help you separate model parameters from data
+        generation and validation settings.
+      </p>
+
+      <h2>🎛️ Interface Guide (Grouped by Sections)</h2>
+
+      <!-- SECTION 1 -->
+      <div class="control-group">
+        <h3>1. MODEL HYPERPARAMETERS (Left Panel)</h3>
+        <p>
+          Controls <em>mathematical</em> properties of the model. These settings
+          do not change the data.
+        </p>
+        <ul>
+          <li>
+            <span class="term">Degree:</span> Complexity of the polynomial.
+            <ul>
+              <li>Low (1-2) = Simple/Stiff. High (10+) = Flexible/Wiggly.</li>
+            </ul>
+          </li>
+          <li>
+            <span class="term">Alpha:</span> Regularization strength.
+            <ul>
+              <li>
+                Use this to smooth out high-degree polynomials and fight
+                Overfitting.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- SECTION 2 -->
+      <div class="control-group">
+        <h3>2. DATA GENERATION (Center Panel)</h3>
+        <p>Controls how the raw data is created.</p>
+        <ul>
+          <li>
+            <span class="term">Dataset Type (Radio):</span> Choose the shape of
+            the underlying "Truth" (Sine, Linear, etc.).
+          </li>
+          <li>
+            <span class="term">Noise:</span> Adds random error to the data
+            points.
+          </li>
+          <li>
+            <span class="term">Count (Size):</span> Total number of data points.
+          </li>
+          <li>
+            <span class="term">New Random Seed (Button):</span> Regenerates the
+            random noise pattern.
+          </li>
+        </ul>
+      </div>
+
+      <!-- SECTION 3 -->
+      <div class="control-group">
+        <h3>3. ANALYSIS & VALIDATION (Right Panel)</h3>
+        <p>Tools to evaluate how good the model is.</p>
+        <ul>
+          <li>
+            <span class="term">Graph Mode:</span> Switch the right-hand plot
+            between <strong>Complexity Curve</strong> (Degree vs Error) and
+            <strong>Learning Curve</strong> (Size vs Error).
+          </li>
+          <li>
+            <span class="term">Test %:</span> How much data is hidden from the
+            model for testing.
+          </li>
+          <li>
+            <span class="term">Use Cross-Validation:</span> Check this to use
+            5-Fold CV instead of a single split.
+          </li>
+          <li>
+            <span class="term">Residuals:</span> Toggle red error lines on the
+            main plot.
+          </li>
+        </ul>
+      </div>
+
+      <h2>🖱️ Interactive Features</h2>
+      <div class="tip">
+        <strong>Manual Outliers:</strong> Click anywhere on the main plot (white
+        space) to add a manual data point.
+      </div>
+
+      <footer>
+        <hr />
+        <p>
+          Developed by: Gemini AI | Powered by Python, Matplotlib &
+          Scikit-Learn.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
