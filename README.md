@@ -37,43 +37,48 @@ Manual Outlier Addition: Add your own outliers by clicking on the graph and watc
 Follow these steps to run the project on your local machine:
 
 Clone the Repository:
-
+```shell
 git clone [https://github.com/05Arda/RegressionLab.git](https://github.com/05Arda/RegressionLab.git)
 cd ultimate-ml-lab
-
+```
 Create a Virtual Environment (Recommended):
-
+```shell
 python -m venv venv
+```
 
 # For Windows:
-
+```shell
 venv\Scripts\activate
+```
 
 # For Mac/Linux:
-
+```shell
 source venv/bin/activate
+```
 
 Install Requirements:
-
+```shell
 pip install -r requirements.txt
+```
 
 ▶️ Usage
 
 After installation is complete, enter the following command in the terminal to start the application:
-
+```shell
 python main.py
+```
 
 The application window will open. You can start experimenting using the sliders and buttons on the graphs.
 
 📂 Project Structure
-
+```
 regressionlab/
 │
 ├── main.py # Main application code (Python & Matplotlib)
 ├── requirements.txt # Required Python libraries
 ├── documentation.html # In-app help documentation
 └── README.md # Project description (This file)
-
+```
 🤝 Contributing
 
 Feel free to send a "Pull Request" for bug fixes or new feature suggestions!
